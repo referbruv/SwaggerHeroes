@@ -1,11 +1,10 @@
-using System;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Heroes.Api
+namespace SwaggerHeroes.Core.Options
 {
     public class ConfigureSwaggerOptions : IConfigureNamedOptions<SwaggerGenOptions>
     {
@@ -34,7 +33,7 @@ namespace Heroes.Api
         {
             var info = new OpenApiInfo()
             {
-                Title = "Heroes API",
+                Title = "SwaggerHeroes API",
                 Version = description.ApiVersion.ToString()
             };
 

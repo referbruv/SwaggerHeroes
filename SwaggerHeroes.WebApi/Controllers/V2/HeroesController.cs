@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using Heroes.Api.Contracts.Models;
-using Heroes.Api.Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SwaggerHeroes.Core.Data.Entities;
+using SwaggerHeroes.Core.Data.Repositories;
+using SwaggerHeroes.Core.Data.Services;
+using SwaggerHeroes.Core.Enums;
+using SwaggerHeroes.Core.Models;
 
-namespace Heroes.Api.Controllers.V2
+namespace SwaggerHeroes.Controllers.V2
 {
     [ApiController]
     [ApiVersion("2.0")]
@@ -15,10 +18,10 @@ namespace Heroes.Api.Controllers.V2
         private readonly ILogger<HeroesController> _logger;
         private readonly IHeroesRepository _data;
 
-        public HeroesController(ILogger<HeroesController> logger, IHeroesRepository data)
+        public HeroesController(ILogger<HeroesController> logger, IDataService data)
         {
             _logger = logger;
-            _data = data;
+            _data = data.Heroes;
         }
 
         
