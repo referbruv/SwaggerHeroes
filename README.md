@@ -1,3 +1,7 @@
+[![.NET](https://github.com/referbruv/SwaggerHeroes/actions/workflows/dotnet.yml/badge.svg)](https://github.com/referbruv/SwaggerHeroes/actions/workflows/dotnet.yml)
+![GitHub stars](https://img.shields.io/github/stars/referbruv/SwaggerHeroes)
+[![Twitter Follow](https://img.shields.io/twitter/follow/referbruv?style=social&label=follow)](https://twitter.com/referbruv)
+
 # SwaggerHeroes
 
 SwaggerHeroes is a boilerplate solution to demonstrate integrating Swagger UI with ASP.NET Core. The solution offers the following key takeaways:
